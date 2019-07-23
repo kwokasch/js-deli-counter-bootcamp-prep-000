@@ -7,6 +7,14 @@ function takeANumber(line, name){
   return(`Welcome, ${name}. You are number ${placeInLine} in line.`)
 }
 
+let i = 0;
+
+function takeANumber2(line){
+  i++;
+  line.push(i);
+  return(`Welcome, you have ticket number ${i}.`);
+}
+
 /*Input an array (deli line). If there is no one in line (count = zero), return message (string) that nobody is waiting. If there is someone in line (count > zero), return message (string) "currently serving" that person (string) in line, and remove that person from the line (array).*/ 
 
 
@@ -40,5 +48,3 @@ function currentLine(line) {
     return `The line is currently: ${lineToString}`;
   }
 }
-
-
